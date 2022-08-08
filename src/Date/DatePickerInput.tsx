@@ -68,7 +68,7 @@ function DatePickerInput(
             inputFormat,
             withDateFormatInLabel,
           })}
-          value={formattedValue}
+          value={value ? formattedValue : ''}
           keyboardType={'number-pad'}
           placeholder={inputFormat}
           mask={inputFormat}

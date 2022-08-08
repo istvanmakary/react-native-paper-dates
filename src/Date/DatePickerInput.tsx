@@ -86,9 +86,11 @@ function DatePickerInput(
           />
         ) : null}
       </View>
-      <HelperText type="error" visible={!!error}>
-        {error}
-      </HelperText>
+      {!!error && (
+        <HelperText type="error" visible>
+          {error}
+        </HelperText>
+      )}
 
       {withModal ? (
         <DatePickerModal
